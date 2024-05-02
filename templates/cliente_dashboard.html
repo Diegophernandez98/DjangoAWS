@@ -1,0 +1,40 @@
+{% extends 'base-cliente.html' %}
+{% block content %}
+{% load static %}
+<div class="container px-4 px-lg-5">
+	<div class="row gx-4 gx-lg-5 align-items-center my-5">
+		<div class="row gx-4 gx-lg-5 align-items-center my-5 justify-content-center">
+			<div class="col-lg-12">
+				<h1 class="font-weight-light text-center">SurWave: Innovación en Telecomunicaciones</h1>
+				<p class="text-center">"Conectando horizontes, acercando mundos. SurWave es la vanguardia 
+					de la comunicación global, donde cada señal nos lleva más allá de lo imaginable. 
+					Experimenta la revolución de la conectividad con soluciones que transforman el 
+					presente en el futuro de las telecomunicaciones."</p>
+			</div>
+		</div>
+	</div>
+	<div class="row gx-4 gx-lg-5">
+		<div class="col-md-4 mb-5">
+			<div class="card h-100">
+				<div class="bg-dark text-white text-center py-2">Planes Internet</div>
+				<img src="{% static 'images/internet.jpg' %}" class="card-img-top" alt="...">
+				<div class="card-footer"><a class="btn btn-primary btn-sm" href="{% url 'planes_internet_cliente' %}">+ Internet</a></div>
+			</div>
+		</div>
+		<div class="col-md-4 mb-5">
+			<div class="card h-100">
+				<div class="bg-dark text-white text-center py-2">Planes Telefonía</div>
+				<img src="{% static 'images/telefono canales.jpg' %}" class="card-img-top" alt="...">
+				<div class="card-footer"><a class="btn btn-primary btn-sm" href="{% url 'planes_telefonia_cliente' %}">+ Telefonía</a></div>
+			</div>
+		</div>
+		<div class="col-md-4 mb-5">
+			<div class="card h-100">
+				<div class="bg-dark text-white text-center py-2">Planes Televisión</div>
+				<img src="{% static 'images/tv canales.jpg' %}" class="card-img-top" alt="...">
+				<div class="card-footer"><a class="btn btn-primary btn-sm" href="{% url 'planes_television_cliente' %}">+ Televisión</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}

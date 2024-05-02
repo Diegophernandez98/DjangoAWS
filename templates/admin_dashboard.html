@@ -1,0 +1,68 @@
+{% extends 'base-admin.html' %}
+{% block content %}
+    <h1 class="h1 text-center py-4">Bienvenido, Administrador: {{username}}</h1>
+    <div class="card m-5">
+        <div class="container">
+            <div class="card-body">
+                <div class="row-lg">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <a href="{% url 'formUsuario' %}">
+                                <button type="button" class="btn btn-outline-dark btn-lg w-100">Agregar Usuario</button>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="{% url 'formPlanInternet' %}">
+                                <button type="button" class="btn btn-outline-dark btn-lg w-100">Agregar Plan Internet</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <a href="{% url 'formPlanTelevision' %}">
+                                <button type="button" class="btn btn-outline-dark btn-lg w-100">Agregar Plan Television</button>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="{% url 'formPlanTelefonia' %}">
+                                <button type="button" class="btn btn-outline-dark btn-lg w-100">Agregar Plan Telefonia</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <a href="{% url 'listaUsuarios' %}">
+                                <button type="button" class="btn btn-outline-dark btn-lg w-100">Ver Usuarios</button>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="{% url 'listaPlanesInternet' %}">
+                                <button type="button" class="btn btn-outline-dark btn-lg w-100">Ver Planes Internet</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <a href="{% url 'listaPlanesTelevision' %}">
+                                <button type="button" class="btn btn-outline-dark btn-lg w-100">Ver Planes Television</button>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="{% url 'listaPlanesTelefonia' %}">
+                                <button type="button" class="btn btn-outline-dark btn-lg w-100">Ver Planes Telefonia</button>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <a href="{% url 'suscripciones' %}">
+                                <button type="button" class="btn btn-outline-dark btn-lg w-100">Suscripciones</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+{% endblock content %}
+
